@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0dd92e976a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>notesKeeper</title>
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="leftNav">
+        <div id="logo">
+            <div id="logoImg"><img src="logo.png"></div>
+            <div id="appName">NotesApp</div>
+        </div>
+    </div>
+    <div class="rightNav">
+        <div id="search">
+            <div id="searchLogo"><i class="fa fa-search"></i></div>
+            <div id="searchText"><input type="text" id="searchNote" placeholder="Search this page"></div>
+        </div>
+        <div id="refresh"><i class="fa fa-refresh"></i></div>
+        <div><button id="theme">Light</button></div>
+    </div>
+    </nav>
+
+    <div id="bodyLM">
+    
+    <div id="leftBody">
+        <div id="allNotesMenu" class="menu"><i class="menuLogo fa fa-lightbulb-o"></i><span class="menuItem">All Notes</span></div>
+        <div id="pinnedNotesMenu" class="menu"><i class="menuLogo fa fa-thumb-tack"></i><span class="menuItem">Pinned Notes</span></div>
+    </div>
+
+    <div id="mainBody">
+        <div id="notification">
+            <div id="notifMssg"></div>
+            <div id="notifCross"><i class="fa fa-times"></i></div>
+        </div>
+        <div id="addNote">
+            <div id="addNoteBtn">
+                <div id="addLogo" class="visible"><i class="fa fa-plus-circle"></i></div>
+                <div id="addNoteText" class="visible">Click To Add a Note..!</div>
+                <div id="crossNote" class="noneDisp"><i class="fa fa-times"></i></div>
+            </div>
+            <div id="textAreas" class="noneDisp">
+                <div id="addTitle"><textarea name="title" id="title" rows="1" placeholder="Title"></textarea></div>
+                <div id="addContent"><textarea name="content" id="content" rows="5" placeholder="Add note here.."></textarea></div>
+                <div id="addBtns">
+                    <button id="add" class="classAddBtns">AddNote</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="editNote"></div>
+
+        <div id="pinnedNotes">
+            <h3 class="heading" style="font-family:'Shadows Into Light', cursive;">Pinned Notes</h4>
+            <div id="pin"></div>
+        </div>
+
+        <div id="otherNotes">
+            <h3 class="heading" style="font-family:'Shadows Into Light', cursive;">Other Notes</h3>
+            <div id="other"></div>
+        </div>
+
+        <div id="pagination">
+            <div id="prev">Previous</div>
+            <div id="pageNos"></div>
+            <div id="next">Next</div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
